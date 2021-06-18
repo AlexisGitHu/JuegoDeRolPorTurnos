@@ -12,3 +12,4 @@ Patrones utilizados:
 - Patrón método factoría / Factory method pattern
 - Patrón de estados / State pattern
 
+Todas las imágenes utilizadas en el proyecto son propiedad de empresas ajenas a los desarrolladores del código y se deben tratar como tal.
