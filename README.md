@@ -13,3 +13,9 @@ Patrones utilizados:
 - Patrón de estados / State pattern
 
 Todas las imágenes utilizadas en el proyecto son propiedad de empresas ajenas a los desarrolladores del código y se deben tratar como tal.
+
+Desarrolladores:
+
+- Alexis Gómez Chimeno
+- David García Lleyda
+- Héctor Asorey de Pablos
