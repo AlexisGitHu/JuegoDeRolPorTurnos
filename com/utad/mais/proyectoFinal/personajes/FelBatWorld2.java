@@ -1,0 +1,69 @@
+package com.utad.mais.proyectoFinal.personajes;
+
+import com.utad.mais.proyectoFinal.pattern.strategy.*;
+public class FelBatWorld2 extends FelBat
+{
+	/*
+	 * Clase concreta del enemigo tipo FelBat mundo 2.
+	 * 
+	 * Se encarga incrementar las estadísticas base que recibe  en la instanciación por un factor de complejidad.
+	 * 
+	 * Aunque presenta un constructor por defecto, en la instanciación por parte del patrón abstract factory se utiliza el constructor
+	 * por parámetros.
+	 * 
+	 * Guarda una referencia al tipo de mundo al que debe pertenecer. (Atributo world).
+	 * 
+	 * Este factor varía según el tipo de mundo.
+	 * 
+	 * La implementación de sus métodos son llamadas explícitas al su clase padre.
+	 */
+	private World world;
+	
+	public FelBatWorld2()
+	{
+		this(new OffensiveStrategy());
+	}
+	public FelBatWorld2(ActivityStrategy strategy)
+	{
+		super(strategy);
+		this.world=World.LEVEL2;
+	}
+	public FelBatWorld2(Integer fuerza, Integer agilidad, Integer intelecto, Integer vida,ActivityStrategy strategy)
+	{
+		super((int)(fuerza*World.LEVEL2.getFactorComplejidad()),
+				(int)(agilidad*World.LEVEL2.getFactorComplejidad()),
+				(int)(intelecto*World.LEVEL2.getFactorComplejidad()),
+				(int)(vida*World.LEVEL2.getFactorComplejidad()),strategy);
+		this.world=World.LEVEL2;
+	}
+	public Integer getFuerza()
+	{
+		return super.getFuerza();
+	}
+	public Integer getAgilidad()
+	{
+		return super.getAgilidad();
+	}
+	public Integer getIntelecto()
+	{
+		return super.getIntelecto();
+	}
+	public Integer getResistenciaMagica()
+	{
+		return super.getResistenciaMagica();
+	}
+	public Integer getResistenciaFisica()
+	{
+		return super.getResistenciaFisica();
+	}
+	public Integer getVida()
+	{
+		return  super.getVida();
+	}
+	public World getWorld() {
+		return world;
+	}
+	public void setWorld(World world) {
+		this.world = world;
+	}
+}
