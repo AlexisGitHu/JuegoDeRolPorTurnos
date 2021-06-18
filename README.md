@@ -1,5 +1,7 @@
 # JuegoDeRolPorTurnos
-Pequeño juego por turnos implementando diferentes patrones de diseño de software. 
+Desarrollo de un juego de rol por turnos implementando diferentes patrones de diseño de software.
+
+Desarrollado en Java.
 
 Implementa una interfaz gráfica sencilla utilizando el paquete 'java.swing'.
 
